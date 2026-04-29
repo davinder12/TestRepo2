@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-Test
-    <meta charset="UTF-8">
-    <title>Marketing Form Pag Nice Page </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <button id="okButton">Tester coding</button>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Tracking Test</title>
 
+  <!-- Salesforce tracking snippet -->
 <script src="https://cdn.c360a.salesforce.com/beacon/c360a/3a032004-af2b-411b-9d3f-f6a09928b258/scripts/c360a.min.js?wtcp_id=1NDOf00000007xZOAQ"></script>
 
+</head>
+<body>
+  <h1>Website Tracking Test Page</h1>
+  <p>This page is for testing Salesforce external website tracking.</p>
 
+  <a href="https://example.com" id="testLink" target="_blank" rel="noopener noreferrer">
+    Test Link Click
+  </a>
 
+  <br /><br />
 
+  <button id="testButton" type="button">Test Button Click</button>
+
+  <script>
+    document.getElementById("testButton").addEventListener("click", function () {
+      alert("Button clicked");
+    });
+  </script>
 </body>
-
- </html>
-
-
-
+</html>

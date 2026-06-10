@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website Tracking Test2</title>
-
-<script src="https://cdn.c360a.salesforce.com/beacon/c360a/4725539c-14df-40ef-ae8e-355120271e2e/scripts/c360a.min.js?wtcp_id=1NDbi0000000AsDGAU"></script>  
+  <title>Website Tracking Test3</title>
+<script src="https://cdn.c360a.salesforce.com/beacon/c360a/4725539c-14df-40ef-ae8e-355120271e2e/scripts/c360a.min.js?wtcp_id=1NDbi0000000AsDGAU"></script>
+<script>
+  document.dispatchEvent(
+    new CustomEvent('experience_interaction', {
+      bubbles: true,
+      composed: true,
+      detail: {
+        name: 'set-consent',
+        value: true, // Automatically sets consent
+      },
+    })
+  );
+</script>
   
 </body>
 </html>

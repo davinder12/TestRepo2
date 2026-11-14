@@ -1,95 +1,153 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Website Tracking Testasd3</title>
-<!-- Insert these code snippets into your external site page in the order shown. -->
-<!-- Insert these <script> tags directly above the embedded form. -->
-<script async="async" src="https://cybersamurai.my.site.com/lp/assets/scripts/external-forms-host.min.js"></script>
-<script async="async" src="https://cybersamurai.my.site.com/lp/assets/lightning_out_embed/prod/de/MC44FHOO32IVBBXGHP23HXLUVURI.js" onload="window.sfdc_forms?sfdc_forms.init():window.sfdc_forms={loReady:!0}"></script>
-<!-- This tag contains the form. Add it to your page where you want the form to be located. -->
-<fragment-z4v9keixzpozln22dpe9u44be6qret28vgpvnbaqekp title="Marketing Form" id="container" data-web-tracking="true" data-external-form="true" data-recaptcha-site-key=""></fragment-z4v9keixzpozln22dpe9u44be6qret28vgpvnbaqekp>
 
-  
-  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website Tracking Test</title>
+
+    <!-- Embedded Service Chat Styling -->
+    <style>
+        .embeddedServiceHelpButton .helpButton .uiButton {
+            background-color: #005290;
+            font-family: Arial, sans-serif;
+        }
+
+        .embeddedServiceHelpButton .helpButton .uiButton:focus {
+            outline: 1px solid #005290;
+        }
+
+        iframe {
+            width: 100%;
+            height: 900px;
+            border: none;
+        }
+    </style>
+
 </head>
 
-  
-
-  
-  <body>
-     <iframe
-    src="https://orgfarm-7b4baf465a-dev-ed.develop.my.site.com"
-    title="Salesforce Experience Cloud Portal"
-    width="100%"
-    height="900"
-    style="border: none;">
-</iframe>
-  
-  <p>tester working to see124</p>
 <body>
-  
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>
 
-<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script type='text/javascript'>
-	var initESW = function(gslbBaseURL) {
-		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+    <!-- Salesforce Experience Cloud Portal -->
+    <h2>Salesforce Experience Cloud Portal</h2>
 
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+    <iframe
+        src="https://orgfarm-7b4baf465a-dev-ed.develop.my.site.com"
+        title="Salesforce Experience Cloud Portal">
+    </iframe>
 
-		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+    <p>Tester working to see124</p>
 
-		// Settings for Chat
-		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-			// Returns a valid button ID.
-		//};
-		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
-		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-		embedded_svc.settings.entryFeature = 'LiveAgent';
+    <!-- ====================================== -->
+    <!-- Salesforce External Form Integration -->
+    <!-- ====================================== -->
 
-		embedded_svc.init(
-			'https://resilient-impala-1tfbxp-dev-ed.trailblaze.my.salesforce.com',
-			'https://resilient-impala-1tfbxp-dev-ed.trailblaze.my.salesforce-sites.com/liveAgentSetupFlow',
-			gslbBaseURL,
-			'00DNS00000fGKmZ',
-			'second_user',
-			{
-				baseLiveAgentContentURL: 'https://c.la11-core1.sfdc-y37hzm.salesforceliveagent.com/content',
-				deploymentId: '572NS00000SZzdB',
-				buttonId: '573NS000007PbwP',
-				baseLiveAgentURL: 'https://d.la11-core1.sfdc-y37hzm.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'second_user',
-				isOfflineSupportEnabled: false
-			}
-		);
-	};
+    <!-- Insert scripts directly above the form -->
 
-	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://resilient-impala-1tfbxp-dev-ed.trailblaze.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-		s.onload = function() {
-			initESW(null);
-		};
-		document.body.appendChild(s);
-	} else {
-		initESW('https://service.force.com');
-	}
-</script>
+    <script
+        async
+        src="https://cybersamurai.my.site.com/lp/assets/scripts/external-forms-host.min.js">
+    </script>
+
+    <script
+        async
+        src="https://cybersamurai.my.site.com/lp/assets/lightning_out_embed/prod/de/MC44FHOO32IVBBXGHP23HXLUVURI.js"
+        onload="window.sfdc_forms ? window.sfdc_forms.init() : window.sfdc_forms = {loReady:true}">
+    </script>
+
+    <!-- Salesforce Marketing Form -->
+    <fragment-z4v9keixzpozln22dpe9u44be6qret28vgpvnbaqekp
+        title="Marketing Form"
+        id="container"
+        data-web-tracking="true"
+        data-external-form="true"
+        data-recaptcha-site-key="">
+    </fragment-z4v9keixzpozln22dpe9u44be6qret28vgpvnbaqekp>
+
+
+    <!-- ====================================== -->
+    <!-- Salesforce Embedded Service Chat -->
+    <!-- ====================================== -->
+
+    <script
+        type="text/javascript"
+        src="https://service.force.com/embeddedservice/5.0/esw.min.js">
+    </script>
+
+    <script type="text/javascript">
+
+        var initESW = function(gslbBaseURL) {
+
+            embedded_svc.settings.displayHelpButton = true;
+
+            embedded_svc.settings.language = '';
+
+            // Chat Settings
+            embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+
+            embedded_svc.settings.entryFeature = 'LiveAgent';
+
+            // Initialize Salesforce Embedded Service Chat
+            embedded_svc.init(
+
+                'https://resilient-impala-1tfbxp-dev-ed.trailblaze.my.salesforce.com',
+
+                'https://resilient-impala-1tfbxp-dev-ed.trailblaze.my.salesforce-sites.com/liveAgentSetupFlow',
+
+                gslbBaseURL,
+
+                '00DNS00000fGKmZ',
+
+                'second_user',
+
+                {
+                    baseLiveAgentContentURL:
+                        'https://c.la11-core1.sfdc-y37hzm.salesforceliveagent.com/content',
+
+                    deploymentId:
+                        '572NS00000SZzdB',
+
+                    buttonId:
+                        '573NS000007PbwP',
+
+                    baseLiveAgentURL:
+                        'https://d.la11-core1.sfdc-y37hzm.salesforceliveagent.com/chat',
+
+                    eswLiveAgentDevName:
+                        'second_user',
+
+                    isOfflineSupportEnabled: false
+                }
+            );
+        };
+
+
+        // Load Salesforce Embedded Service JavaScript
+        if (!window.embedded_svc) {
+
+            var s = document.createElement('script');
+
+            s.setAttribute(
+                'src',
+                'https://resilient-impala-1tfbxp-dev-ed.trailblaze.my.salesforce.com/embeddedservice/5.0/esw.min.js'
+            );
+
+            s.onload = function() {
+                initESW(null);
+            };
+
+            document.body.appendChild(s);
+
+        } else {
+
+            initESW('https://service.force.com');
+
+        }
+
+    </script>
+
+</body>
 </html>
